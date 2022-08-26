@@ -23,7 +23,7 @@ Terraform module to create SES mail from subdomain for feedback and bounce confi
 # Module
 ##############
 module "ses_mailfrom_example" {
-  source = "github.com/virsas/terraform_ses_mailfrom"
+  source = "git::https://github.com/virsas/terraform_ses_mailfrom.git?ref=v1.0.0"
   domain = module.ses_domain_example.domain
   zone = module.route53_example_org.zone_id
   from_subdomain = "bounce.example.org"
